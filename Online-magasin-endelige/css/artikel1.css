@@ -1,0 +1,308 @@
+:root {
+    --Beige: #f1f1e5;
+    --blue: #1d2cc8;
+    --contrast: #000; 
+   
+  }
+
+  body {
+    background-color: var(--Beige);
+    font-family: "Poppins", sans-serif;
+    padding-top: 80px; /* Plads til navbaren */
+    margin: 20px;
+   }
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--Beige);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    padding: 10px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    border-bottom: 5px solid var(--blue); /* Beholder denne fra din kode */
+  }
+  
+  
+  .logo {
+    width: 200px; /* logo størrelse */
+    margin-right: 9%; /* Tilføjer en margin til venstre for logo for at centrere nav */
+  }
+  
+  /* Menu styling */
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Mellemrum mellem menupunkter */
+    justify-content: center; /* Centrerer menupunkterne */
+  }
+  
+/* Gør det muligt at placere dropdowns ift menupunkterne */
+.navbar ul li {
+  position: relative;
+}
+
+/* Style links*/
+.navbar ul li a {
+  text-decoration: none; /* fjerner understregning */
+  font-size: 14px; /* sætter fontstørrelse */
+  padding: 14px 16px; /* definerer indre afstand */
+  color: var(--blue); 
+  display: block; /* gør at links fylder det tilgængelige rum */
+  text-align: center; /* centrerer tekst */
+}
+  
+  /* Hover effekter */
+  .navbar a:hover, .navbar ul li:hover > a {
+    background-color: rgb(169, 157, 157);
+  }
+  
+  /* Dropdown-menuer */
+  .navbar ul li ul {
+    position: absolute;
+    padding: 0%;
+    top: 100%; /* Placerer dropdown under hovedmenuen */
+    background: #f9f9f9;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .navbar ul li ul li {
+    width: 100%; /* Gør dropdown-elementerne lige brede */
+    height: 100%;
+    border-top: 1px solid rgba(0,0,0,0.1); /* Tilføjer en divider mellem dropdown-elementer */
+  }
+  
+ /* Hover effekter */
+  .navbar ul li:hover > ul {
+    display: block;
+  }
+  
+  /* under dropdown */
+  .navbar ul li ul li ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Placerer den anden dropdown til højre for første */
+    background: #f9f9f9;
+  }
+  
+ /* Hover effekter */
+  .navbar ul li ul li:hover > ul {
+    display: block;
+  }
+  
+  /* Søgefelt til højre */
+  .right-tag {
+    margin-left: auto; /* Sørger for at søgefeltet er til højre */
+    text-decoration: none;
+    color: var(--blue);
+    padding: 14px;
+  }
+    .artikel{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px;
+   
+}
+    .hojreside{
+    margin-top: 50px;
+    margin-right: auto;
+    padding: 10px;
+    width: 100%;
+
+
+}
+.hojreside div{
+    border: 1px solid gray;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    background-color: var(--Beige);
+}
+.venstreside{
+margin-top: 50px;
+margin-left: auto;
+text-align: center;
+}
+
+.venstreside div{
+width: auto;
+height: auto;
+}
+
+  .afsnit1{
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    justify-self: center;
+   
+  }
+  .artikelbillede{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 30px;
+ }
+
+  h1{
+    text-align: left;
+    margin: 0;
+    font-size:30px;
+  }
+.eyebrow{
+    
+        font-size: 15px;
+        color: #555;
+        text-transform: uppercase;
+        margin-bottom: 0;
+  
+}
+
+  
+  h2{
+    text-align: left;
+    font-size: 23px;
+    margin: 0;
+
+  }
+h3{
+    text-align: left;
+    font-size: 18px;
+    margin: 0;
+}
+p{
+    margin-bottom: 40px;
+    margin-top: 0px;
+    line-height: 2;
+}
+
+
+.sec3liste{
+    margin: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+.skabelon{
+    display: block;
+    margin-bottom: 40px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px dotted var(--blue);
+    padding: 10px;
+}
+
+.links{
+    margin: 40px;
+}   
+
+
+ 
+/*centrer teksten*/
+.h3seogso {
+    text-align: center;
+}
+
+
+/*styre rækken med ekstra artikler*/
+.seogso{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+    gap: 20px;
+}
+/*styrer de enklte artiklers bredde og giver en sort kant og hvid baggrund*/
+.seogso div{
+    width: 55%;
+    border: 5px solid black;
+    background-color: #f9f9f9;
+   
+}
+
+.seogso div:hover{
+    transform: scale(1.1);
+}
+
+
+/*dette er overskriften på artiklerne*/
+.seogsoartikler{
+    text-decoration: none; 
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+}
+/*bestemmer billedet brede  og højre og object-fit: cover gør at billeder ikke bliver strukket */
+.seogsobillede{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+
+
+  /* Stilindstillinger for sidefoden */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* kontainer for sociale medier ikoner */
+.some {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+/* Generel stil for alle  ikoner */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+  text-align: center; 
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+/* Hover-effekt */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Specifik stil for Facebook-ikon */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  border-radius: 50%;
+  width: 15%;
+}
+
+/* Specifik stil for Instagram-ikon */
+.fa-instagram {
+  background: #125688;
+  color: white;
+  border-radius: 50%;
+  width: 8%;
+  height: auto; /* Sørger for at højden tilpasses  */
+}
+
+/* Specifik stil for Pinterest-ikon */
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+  border-radius: 50%;
+  width: 8%;
+}
